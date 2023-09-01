@@ -1,5 +1,3 @@
-![Design preview for the Results summary component coding challenge](./assets/images/screenshot.png)
-
 ## Welcome! 👋
 
 # Frontend Mentor - Results summary component solution
@@ -15,12 +13,9 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -53,51 +48,39 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+From the challenge I learnt 2 things:
+1. CSS flex-group. 
+CSS Flex Groups, also known as Flexbox, is a layout model that allows you to create complex layouts with ease. It provides a flexible way to distribute space and align items within a container, making it a powerful tool for responsive web design. A flex container is an HTML element that holds a group of flex items. To create a flex container, you need to apply the `display: flex;` property to it. This property establishes a new flex formatting context for its children.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.flex-group{
+    display: flex;
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+2. CSS grid-auto-flow.
+A CSS property used in grid layouts to determine how grid items are automatically placed within a grid container when there is more content than explicitly defined grid tracks. This property offers three main values: row, column, and dense. When set to row, new items are placed in rows, stacking vertically. When set to column, they are placed in columns, stacking horizontally. The dense value is particularly useful; it attempts to fill in any gaps left by empty grid cells, optimizing space utilization. By using grid-auto-flow, you can control the flow of content in your grid layout, creating dynamic and flexible designs without specifying exact placement for every item.
+```css
+.grid-flow{
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+}
+```
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Example resource 1](https://www.w3schools.com/css/css3_flexbox.asp) - This helped me with the CSS flex-group issue.
+- [Example resource 2](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow) - This is an amazing article which helped me with the CSS grid-auto-flow issue. 
 
 ## Author
 
 - Website - [Irene Nyatichi](https://irenenyatichiportfolio.netlify.app/)
 - Frontend Mentor - [@irenenyatichi](https://www.frontendmentor.io/profile/irenenyatichi)
 - Twitter - [@Me_Tichi](https://www.twitter.com/Me_Tichi)
-- Github - [@irenenyatichi] (https://github.com/irenenyatichi)
+- Github - [@irenenyatichi](https://github.com/irenenyatichi)
 - LinkedIn - [@IreneNyatichi](https://www.linkedin.com/in/irene-nyatichi/)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I'd really like to appreciate Frontend Mentor for this challenge as I was able to learn something new from this challenge.
