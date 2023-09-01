@@ -1,0 +1,295 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li,fieldset,
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* body {
+	line-height: 1;
+} */
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    font-family: 'Hanken Grotesk'; 
+    font-style:normal 
+}
+
+body{
+    background-color: #ecf2ff;
+}
+
+section{
+    border:none;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#results-container{
+    box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+    background-color: #fff;
+    display: flex;
+    margin-top: -10px;
+    margin-bottom: 0%;
+    border-radius: 32px;
+}
+
+#your-results{
+    background: rgb(119,85,255);
+    background: linear-gradient(180deg, rgba(119,85,255,1) 00%, rgba(105,67,255,1) 38%, rgba(47,44,233,1) 100%);
+    text-align:center;
+    border-radius: 32px;
+    max-width: 368px;
+}
+
+#your-results h3{
+    color: #cac9ff;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#your-results span.show-result{
+    color: #fff;
+    font-size: 72px; 
+    line-height: 72px;
+    text-align: center;
+    font-weight: 800;
+}
+
+#your-results div.out-of-hundred{
+    display: grid;
+    place-content:center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 86.45px;
+    color: #cac9ff;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+    border-radius: 50%;
+    margin: 10% auto;
+    position: relative;
+}
+
+.show-result{
+    position: absolute;
+    width: inherit;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    left: 0%;
+}
+
+#your-results p{
+    color: #cac9ff;
+}
+
+#your-results .result-text h2{
+    font-family: 'Hanken Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    color: #fff;
+}
+
+.result-text p.bottom-text{
+    font-family: 'Hanken Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #cac9ff;
+    margin: 12px 60px 60px 60px;
+
+}
+
+#summary-container{
+    background-color: #fff;
+    max-width:328px;
+    margin: 40px;
+}
+
+#summary-container img{
+    background-color: transparent !important;
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    margin-right: 8px;
+}
+
+#summary-container h2{
+    color: #303b59;
+    font-family: 'Hanken Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 30px;
+}
+
+#summary-container ul :first-child{
+    background-color:#fff6f6;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+#summary-container ul :first-child h3{
+    color: #ff5555;
+}
+
+#summary-container ul :nth-child(2){
+    background-color:#fffbf4;
+    color: #ffb21e;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+#summary-container ul :nth-child(3){
+    background-color:#f2fcf9;
+    color: #00bb8f;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+#summary-container ul :nth-child(4){
+    background-color:#f2fcf9;
+    color: #1125d6;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+#summary-container ul :nth-child(4){
+    background-color: #f3f4fd;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+
+#summary-container button{
+    background: #303B59;
+    border-radius: 128px;
+    font-family: 'Hanken Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: right;
+    border:none;
+    color: #fff;
+}
+
+.flex-group{
+    display: flex;
+}
+
+.grid-flow{
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+}
+
+#summary-container li{
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+#summary-container li p{
+    display: flex;
+    align-items: center;
+    margin-left: 120px;
+    background-color: transparent !important;
+    color: #303B59 !important;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: right;
+    margin-right:19px;
+}
+
+#summary-container li p span{
+    display: flex;
+    align-items: center;
+    color: #919ca9 !important;
+    background-color: transparent !important;
+}
+
+#summary-container button{
+    width: 100%;
+    text-align:center;
+    height: 56px;
+    margin-top: 40px;
+ 
+    
+}
+
+#summary-container button:hover{
+    background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+   
+}
+
+/* For responsiveness on different screens as required by the challenge */
+@media (max-width: 685px){
+    #results-container{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+    }
+
+    #your-results{
+        max-width: unset;
+    }
+
+    #summary-container{
+        max-width: unset;
+    }
+
+}
